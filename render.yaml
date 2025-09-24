@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: traffic-light-detection-api
+    env: python
+    region: oregon
+    plan: starter
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.7.9
+      - key: PORT
+        value: 8000
+    healthCheckPath: /health
+    autoDeploy: true

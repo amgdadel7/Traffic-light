@@ -1,0 +1,39 @@
+# Traffic Light Detection API - Render Deployment Requirements
+# Optimized for Python 3.7 on Render
+
+# Core TensorFlow (CPU only for Render)
+tensorflow==1.15.5
+protobuf==3.20.3
+
+# Image processing
+Pillow==7.2.0
+opencv-python==4.4.0.46
+lxml==4.6.3
+
+# Data science and visualization
+numpy==1.19.5
+matplotlib==3.3.4
+pandas==1.1.5
+scipy==1.5.4
+scikit-learn==0.23.2
+scikit-image==0.17.2
+seaborn==0.11.2
+
+# Additional utilities
+Cython==0.29.21
+contextlib2==0.6.0.post1
+h5py==2.10.0
+imageio==2.9.0
+moviepy==1.0.3
+
+# COCO API
+pycocotools==2.0.2
+
+# FastAPI and web server
+fastapi==0.68.2
+uvicorn[standard]==0.15.0
+python-multipart==0.0.5
+requests==2.28.2
+
+# Additional dependencies for Render
+gunicorn==20.1.0
