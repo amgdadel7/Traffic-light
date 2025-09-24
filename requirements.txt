@@ -1,0 +1,43 @@
+# Traffic Light Detection and Color Recognition Dependencies
+# Core dependencies as specified - Python 3.7 compatible versions
+
+# TensorFlow and related
+tensorflow>=1.15.0,<2.0.0
+tensorflow-gpu>=1.15.0,<2.0.0
+
+# Protobuf
+protobuf>=3.6.0,<4.0.0
+
+# Image processing
+Pillow>=6.0,<8.0
+opencv-python>=4.0.0,<4.5.0
+lxml>=4.0.0
+
+# Data science and visualization - Python 3.7 compatible versions
+numpy>=1.16.0,<1.20.0
+matplotlib>=3.0.0,<3.4.0
+jupyter
+pandas>=0.24.0,<1.2.0
+scipy>=1.2.0,<1.6.0
+scikit-learn>=0.20.0,<0.24.0
+scikit-image>=0.15.0,<0.17.0
+seaborn>=0.9.0,<0.11.0
+
+# Additional utilities
+Cython>=0.29.0
+contextlib2
+h5py>=2.9.0,<3.0.0
+imageio>=2.5.0,<2.9.0
+moviepy>=1.0.0,<1.1.0
+
+# COCO API - use a different fork that's Python 3.7 compatible
+pycocotools-windows; sys_platform == "win32"
+pycocotools; sys_platform != "win32"
+
+# FastAPI and web server dependencies
+fastapi>=0.68.0,<0.100.0
+uvicorn[standard]>=0.15.0,<0.25.0
+python-multipart>=0.0.5,<0.1.0
+
+# Optional: GUI support
+# python-tk (install via conda: conda install python-tk)
