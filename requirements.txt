@@ -1,6 +1,6 @@
 # Traffic Light Detection and Color Recognition Dependencies
 # Core dependencies as specified - Python 3.7 compatible versions
-
+python>=3.7.9
 # TensorFlow and related
 tensorflow>=1.15.0,<2.0.0
 tensorflow-gpu>=1.15.0,<2.0.0
